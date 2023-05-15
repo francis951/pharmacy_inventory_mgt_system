@@ -1,0 +1,87 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Doctor WuHaYu</title>
+
+  <style>
+    /* html { font-family: arial; color: #13cf2c; }
+    body { max-width: 500px; margin: 0 auto; padding: 0 15px; }
+    div, article { padding: 10px; margin: 5px; border: 1px solid #560bb8; } */
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="jumbotron text-center jumbotron-fluid">About Doctor WuHaYu Pharmacy</h1>
+  
+  
+  <div id="demo"></div>
+
+  <div class="jumbotron">  
+    <h2 class="display-4 text-center">Doctor WuHaYu</h2>
+    <p class="">He's a Chinese Doctor who has his roots from China</p>
+    <blockquote>"Working together towards the future of personalised health care and personal care"</blockquote>
+    <p class="continer">
+      <span class="lead">Our</span> passion is to focus on research and development of customised health care,<br>
+      personal care products and various drug delivery systems to bring innovative pharmaceutical solutions to the health care and personal care industry.<br> 
+      The WuHaYu Pharmacy prides itself by bringing quality products to service our physicians and clients widely.<br>
+      The WuHaYu Pharmacy has made it our mission to put our customers first and to constantly evaluate and improve our formulations.<br>
+    </p>
+  </div>
+
+  <!-- <h2>Tag (article)</h2> -->
+  <article class="jumbotron">At WuHaYu Pharmacy, we believe in high-quality as well as exceptional customer service. We don't consider shopping to be a luxury, but more so a right. That's why we focus on delivering the best products at affordable prices. We'll ship them to you no matter where you're located!</article>
+  <!-- <article>Access me by tag (2)</article> -->
+  <div class="jumbotron">
+    <h2>Our Mission and Vision</h2><hr>
+  <div class="my-4">Our Mission
+    To provide personalised health solutions to meet the unique healthcare needs of our patients to achieve optimum health</div>
+
+  
+  <div class="jumbotron demo-query-all">
+    <h2>Vision</h2><hr>
+    <p>
+      Our Vision
+    To empower health care professionals and patients with the knowledge of optimizing medication use and improving patient health
+    </p>
+  </div>
+  <div class="jumbotron demo-query-all">
+    <h1>Location</h1><hr>
+    <p>The Dr WuHaYu Pharmacy is located in Entebbe</p>
+  </div>
+  </div>
+  
+  <footer class="page-footer font-small blue">
+  
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">&copy; all rights reserved by Francis Murungi since 2011 to:
+        <a href="/"> <span id="year"></span></a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+  <script>
+      const currentDate = new Date();
+      const currentYear = new Date().getFullYear();
+      document.getElementById('year').textContent = currentYear;
+  
+  </script>
+  </div>
+
+</body>
+<script src="{% static 'js/access.js' %}">
+
+  </script>
+
+</html>
+{% endblock %}

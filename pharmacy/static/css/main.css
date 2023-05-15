@@ -1,0 +1,87 @@
+.nav a:hover{
+    border-radius: 5px;
+    padding: 15px 20px;
+    background-color: rgb(26, 21, 21);
+}
+#navbarNav{
+    padding-right: 400px;
+    margin-right: 30px;
+}
+
+/* html,body {
+    position: relative;
+    overflow-x: hidden;
+    background:  url('/static/images/drwu.jfif');
+    width: 100% !important;
+    height: 100vh;
+    display: table;
+    position: relative;
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+} */
+.fs-1{
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+body{
+      background-color: hsla(0, 41%, 97%, 0.726);
+      /* font-family: 'cursive'; 'raleway' */
+      font-family: 'Edu NSW ACT Foundation', 'cursive';
+ }
+ /* footer{
+    bottom: 0;
+    margin-top: 60px;
+    padding: 10px 90px;
+    overflow: hidden;
+    position:relative;
+    border-top: 2px solid green;
+    width: 100%;
+    background-color: rgb(34, 30, 30);
+    text-align: center;
+ } */
+ .center{
+    text-align: center;
+    color :aliceblue
+ }
+
+form {
+    width: 40%;
+    margin: 0 auto;
+}
+#form:hover{
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+    border: 1px solid grey;
+    padding: 45px 70px 45px;
+    box-shadow: 9px 10px rgb(241, 232, 215);
+    background-color: rgb(202, 199, 194);
+}
+
+#btn{
+    padding: 3.5px 30px;
+}
+
+/* .navbar, .thead {
+    background-color: #050505cb;
+} */
+
+.navbar li a {
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 30px !important;
+}
+
+@media(max-width: 767px){
+    form { 
+        width: 90%;
+    }
+}

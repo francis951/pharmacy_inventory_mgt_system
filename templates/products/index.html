@@ -1,0 +1,57 @@
+{% extends 'products/base.html'%} {% block content%}
+<br></br>
+<marquee behavior="alternative" class='blink' bgcolor="green" direction="">Welcome to Doctor WuHaYu Pharmacy</marquee>
+<div class = "jumbotron container">
+  <h1 class= "text-center">IN STOCK</h1>
+  <br>
+
+  <div class = "container">
+    <form id="search" action = "" method = "GET">
+      {{products_filter.form}}
+      <input title="Search for items"
+      type = "submit"
+      value = "Quest"
+      id="btn"
+      class="btn btn-secondary btn"/>
+    </form>
+  </div>
+
+  <br>
+  <table  class="table table-hover fs-1">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Category</th>
+        <th scope="col">Item Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Unit Price(UGX)</th>
+        <th scope="col">Detail</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    {% for product in products%}
+    <tbody>
+      <tr>
+        <td>{{product.category_name}}</td>
+        <td>{{product.item_name}}</td>
+        <td>{{product.total_quantity}}</td>
+        <td>UGX{{product.unit_price}}</td>
+        <td><a href="{% url 'product_detail' product.id %}"
+              ><input title="Buys item"
+                type="submit"
+                value="PURCHASE"
+                class="btn btn-secondary btn"
+                type="button"
+            /></a></td>
+            <td><a href="{% url 'product_detail' product.id %}"
+              ><input title="removes item from the database"
+                type="submit"
+                value="REMOVE"
+                class="btn btn-danger btn"
+                type="button"
+            /></a></td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+</div>
+{% endblock%}

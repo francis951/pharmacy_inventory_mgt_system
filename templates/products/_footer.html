@@ -1,0 +1,16 @@
+{% load static %}
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy; all rights reserved by Francis Murungi since 2011 to:
+      <a href="/"> <span id="year"></span></a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+<script>
+    const currentDate = new Date();
+    const currentYear = new Date().getFullYear();
+    document.getElementById('year').textContent = currentYear;
+
+</script>

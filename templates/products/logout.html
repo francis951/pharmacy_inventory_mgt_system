@@ -1,0 +1,13 @@
+{% extends 'products/base.html' %}\ {% load crispy_forms_tags %} {% block content %}
+<br><br><br><br><br><br>
+<div class="jumbotron body container-fluid container">
+  <h2 class="text-center">You have successsfully logged out</h2><br>
+  <h6 class="text-center "><a href="{% url 'login' %}"><input
+    type="submit"
+    value="Login Again"
+    class="btn btn-secondary btn-lg"
+    type="button"
+    title="Log In Again"
+/></a></h6>
+</div>
+{% endblock %}

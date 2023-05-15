@@ -1,0 +1,18 @@
+{% extends 'products/base.html'%}
+{% load crispy_forms_tags%}
+{% load static %}
+{% block content%}
+
+<br/>
+<div class="container jumbotron jumbotron-fluid">
+    <form method="POST" action="">
+        <h1 class="text-center">ITEM TO STOCK</h1>
+        {% csrf_token %}
+        {{form | crispy}}
+        <input type="submit" class="btn btn-secondary btn">
+    </form>
+</div>
+
+
+    
+{% endblock%}
